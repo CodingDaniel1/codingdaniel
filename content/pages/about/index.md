@@ -15,7 +15,7 @@ I learnt programming back in 2020 because of the pandemic, my first programming 
 
 ## 2021
 
-In 2021, I encountered a youtuber called Dani who is famous for making indie games and funny videos on Youtube. I was encouraged by him to learn game development, resulting me publishing two simpe free indie games on itch.io (Beanson and Stickman simulator) in just 6 months. I learnt Unity and C# back in July 2021, and published Beanson in October 2021, then published Stickman Simulator in Jan 2022.
+In 2021, I found a youtuber called Dani who is famous for making indie games and funny videos on Youtube. I was encouraged by him to learn game development, resulting me publishing two simpe free indie games on itch.io (Beanson and Stickman simulator) in just 6 months. I learnt Unity and C# back in July 2021, and published Beanson in October 2021, then published Stickman Simulator in Jan 2022.
 
 The funny thing is I completely skipped single player game and went straight to multiplayer game development, which by now I'm still mainly focusing on multiplayer game development and it's just fascinating to do multiplayer game development due to how rewarding it is.
 
