@@ -1,8 +1,8 @@
 +++
 title = "Archive"
-# description = "Uncomment and set description"
+path = "archive"
 template = "archive.html"
 [extra]
-date_format = "MMM dd"
 section = "_index.md"
+date_format = "%B %d"
 +++

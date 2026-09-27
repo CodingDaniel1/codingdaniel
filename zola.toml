@@ -1,8 +1,8 @@
 # The URL the site will be built for
 base_url = "https://codingdaniel.pages.dev"
 
-title = "Daniel's blog station"
-author = "CodingDaniel"
+title = "Daniel Chen"
+author = "Daniel Chen"
 
 theme = "linkita"
 
@@ -23,6 +23,15 @@ generate_feeds = true
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
 feed_filenames = ["atom.xml"]
 
+taxonomies = [
+	{ name = "tags", feed = true }
+]
+
+[languages.zh]
+title = "Daniel Chen"
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 taxonomies = [
 	{ name = "tags", feed = true }
 ]
@@ -65,7 +74,7 @@ title_separator = " | "
 header_menu_name = "header_links"
 
 # See "extra.menus".
-menu_i18n = false
+menu_i18n = true
 
 # Enable floating table of contents on the right side of the post page.
 side_toc = true
@@ -78,13 +87,13 @@ toc = true
 
 [extra.menus]
 header_links = [
-    { url = "@/pages/archive.md", name = "Archive" },
+    { url = "@base/archive/", name = "Archive" },
     { url = "@base/tags/", name = "Tags" },
-    { url = "@/pages/about.md", name = "About" },
+    { url = "@base/about/", name = "About" },
 ]
 
-[extra.profiles.CodingDaniel]
-name = "CodingDaniel"
+[extra.profiles.danielchen]
+name = "Daniel Chen"
 bio = "I'm a game/engine developer focusing on graphics programming, game networking, performance optimizations."
 
 # Social icons.

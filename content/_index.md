@@ -3,5 +3,5 @@ paginate_by = 5
 sort_by = "date"
 
 [extra]
-profile = "CodingDaniel"
+profile = "danielchen"
 +++

@@ -2,6 +2,7 @@
 title = "About me"
 description = "I make games and love programming and doing fun stuff"
 date = 2026-09-27
+path = "about"
 +++
 
 # Who am i
