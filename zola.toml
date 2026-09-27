@@ -1,63 +1,122 @@
 # The URL the site will be built for
 base_url = "https://codingdaniel.pages.dev"
 
+title = "Daniel's blog station"
+author = "CodingDaniel"
+
+theme = "linkita"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-theme = "zola-pickles"
+default_language = "en"
 
-title = "Daniel's blog station"
+generate_sitemap = true
 
-# When set to "true", files in the `static` directory are hard-linked. Useful for large
-# static files. Note that for this to work, both `static` and the
-# output directory need to be on the same filesystem. Note that the theme's `static`
-# files are always copied, regardless of this setting.
-# hard_link_static = false
+generate_feeds = true
 
-# The taxonomies to be rendered for the site and their configuration.
-# Example:
-#     taxonomies = [
-#       {name = "tags", feed = true}, # each tag will have its own feed
-#       {name = "tags", lang = "fr"}, # you can have taxonomies with the same name in multiple languages
-#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
-#       {name = "authors"}, # Basic definition: no feed or pagination
-#     ]
-#
+# The filenames to use for the feeds. Used as the template filenames, too.
+# Defaults to ["atom.xml"], which has a built-in template that renders an Atom 1.0 feed.
+# There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
+feed_filenames = ["atom.xml"]
+
 taxonomies = [
-    {name = "tags"},
-    {name = "categories"},
+	{ name = "tags", feed = true }
 ]
 
 [markdown]
+github_alerts = true
+insert_anchor_links = "heading"
+smart_punctuation = true
 
 [markdown.highlighting]
-theme = "catppuccin-mocha"
+# Kita theme supports both "inline" and "class" modes.
+style = "inline"
 
+# If light/dark themes are set, the code highlighting theme will follow Kita theme's light/dark mode.
+light_theme = "light-plus"
+dark_theme = "github-dark-default"
+
+# A list of files for additional JSON TextMate grammars
+extra_grammars = []
+
+# A list of files for additional JSON TextMate themes
+extra_themes = []
+
+# The Kita theme config.
 [extra]
-# You can put any kind of data here. The data
-# will be accessible in all templates
-# Example:
-#     [extra]
-#     author = "Famous author"
-#
-# author value will be available using {{ config.extra.author }} in templates
-#
-subtitle = "Yippeee"
-author = "CodingDaniel"
-copyright = "Copyright <i class=\"fas fa-heart\" style=\"color: red;\"></i> CodingDaniel 2026"
-analytics = ""
-katex_enable = true
-instantpage_enable = true
+# Enable KaTex math formula support globally.
+math = false
 
-# Pagefind site search; requires a `pagefind` run after `zola build`. See
-# README.
-search_enable = true
+# Enable mermaid support globally.
+mermaid = false
 
-[extra.social]
-github = "https://github.com/CodingDaniel1"
-steam = "https://steamcommunity.com/profiles/76561198983573782/"
-youtube = "https://www.youtube.com/@codingdaniel"
-banana_shooter = "https://store.steampowered.com/app/1949740/Banana_Shooter/"
+# Enable comment support globally.
+comment = true
+
+# Title separator.
+title_separator = " | "
+
+# The top menu.
+# See "extra.menus".
+header_menu_name = "header_links"
+
+# See "extra.menus".
+menu_i18n = false
+
+# Enable floating table of contents on the right side of the post page.
+side_toc = true
+
+# Enable table of contents on all pages.
+# If not set, toc is enabled only on posts.
+# If set to false, toc is disabled on all pages.
+# Type: boolean or object
+toc = true
+
+[extra.menus]
+header_links = [
+    { url = "@/pages/archive.md", name = "Archive" },
+    { url = "@base/tags/", name = "Tags" },
+    { url = "@/pages/about.md", name = "About" },
+]
+
+[extra.profiles.CodingDaniel]
+name = "CodingDaniel"
+bio = "I'm a game/engine developer focused on graphics, networking, performance."
+
+# Social icons.
+# "name" should be the file name of "static/icons/*.svg" or
+# the icon name of https://simpleicons.org/
+# "url" supports "@base".
+# Other variables: "urls", "title", "titles".
+social = [
+    { name = "github", url = "https://github.com/CodingDaniel1" },
+    { name = "steam", url = "https://steamcommunity.com/profiles/76561198983573782/" },
+    { name = "youtube", url = "https://www.youtube.com/@codingdaniel" },
+]
+
+
+# [[extra.menu]]
+# name = "Archive"
+# url = "@/pages/archive.md"
+
+[extra.footer]
+since = 2026
+
+# The giscus comment options, only available when comment is enabled.
+[extra.giscus]
+repo = "CodingDaniel1/codingdaniel"
+repo_id = "R_kgDOUuIqmA"
+category = "General"
+category_id = "DIC_kwDOUuIqmM4DGf9y"
+mapping = "pathname"
+strict = 1
+reactions_enabled = 1
+emit_metadata = 0
+input_position = "top"
+theme = "preferred_color_scheme"
+lang = "en"
+loading = "lazy"

@@ -1,3 +1,4 @@
-[submodule "themes/zola-pickles"]
-	path = themes/zola-pickles
-	url = https://github.com/lukehsiao/zola-pickles.git
+[submodule "themes/linkita"]
+	path = themes/linkita
+	url = https://github.com/salif/linkita.git
+	branch = main
