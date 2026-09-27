@@ -29,7 +29,7 @@ This was the struggle year for me, Banana Shooter has made a big impact to me, i
 
 ## 2024
 
-I stopped updating Banana Shooter starting this year, and people are mad about it. At this point the game little monetization system made about 30,000 USD, and theres also influencer promoting it. But I just moved on my *new project*. I spent a year to make my *dream game* which is similar to Rust and Tarkov, at the end, I learnt new stuff including modeling, texturing, animating, sfx, music production, game networking (client side prediction, c# low level programming). 
+I stopped updating Banana Shooter starting this year, and people are mad about it. At this point the game little monetization system made about 30,000 USD, and theres also influencer promoting it. But I just moved on to my *new project*. I spent a year to make my *dream game* which is similar to Rust and Tarkov, at the end, I learnt new stuff including modeling, texturing, animating, sfx, music production, game networking (client side prediction, c# low level programming). 
 
 This was also the year I realized how to maintain a game project in Unity, I was heavily influenced by a game studio called [Facepunch](https://facepunch.com/).
 
@@ -37,7 +37,7 @@ But at the end of 2024, my *dream game* is just a simple terrain and road genera
 
 ## 2025
 
-In short, I stopped my *dream game* development at mid 2025 after a vacation. I realized another program related to my *dream game* visuals, I need to understand how my game renders stuff. Otherwise I literally lose control over rendering completely. After some decision making, I decided to stop working on the game in Unity, and decide to make my own game engine for my game just like how Valve did with their game, where the engine can just be the game itself, so no useless features.
+In short, I stopped my *dream game* development at mid 2025 after a vacation. I realized another issue related to my *dream game* visuals, I need to understand how my game renders stuff. Otherwise I literally lose control over rendering completely. After some decision making, I decided to stop working on the game in Unity, and decide to make my own game engine for my game just like how Valve did with their game, where the engine can just be the game itself, so no useless features and I understand how rendering internals work completely.
 
 I chose Rust + Vulkan + Slang Shader for my game/engine, during the process I learnt so much more about graphics programming, multithreading, systems level programming and API design ergonomics. It was a blast and it was literally the most deep informational year for me.
 
