@@ -6,7 +6,7 @@ date = 2026-09-27
 
 # Who am i
 
-I'm Daniel Chen, a fellow game/engine developer focusing on graphics, networking and performance optimizations development. I'm also CodingDaniel which is also known as the creator of Banana Shooter game (2021).
+I'm Daniel Chen, a fellow game/engine developer focusing on graphics, networking and performance optimizations development. I'm also known as CodingDaniel from Banana Shooter (2021).
 
 ## 2020
 
