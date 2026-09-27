@@ -1,0 +1,33 @@
+{% extends "zola-pickles/templates/index.html" %}
+
+{% block header %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ get_url(path='css/custom.css') }}">
+    <div class="social-links" style="margin-top: 0.5rem; text-align: center;">
+        {% if config.extra.social.github %}
+            <a href="{{ config.extra.social.github }}" target="_blank" rel="me" title="GitHub" style="margin: 0 0.5rem;">
+                <i class="fab fa-github"></i>
+            </a>
+        {% endif %}
+
+        {% if config.extra.social.steam %}
+            <a href="{{ config.extra.social.steam }}" target="_blank" rel="me" title="Steam" style="margin: 0 0.5rem;">
+                <i class="fab fa-steam"></i>
+            </a>
+        {% endif %}
+
+        {% if config.extra.social.youtube %}
+            <a href="{{ config.extra.social.youtube }}" target="_blank" rel="me" title="Youtube" style="margin: 0 0.5rem;">
+                <i class="fab fa-youtube"></i>
+            </a>
+        {% endif %}
+
+        {% if config.extra.social.banana_shooter %}
+            <a href="{{ config.extra.social.banana_shooter }}" target="_blank" rel="me" title="Banana Shooter" style="margin: 0 0.5rem;">
+                <img src="{{ get_url(path='icons/banana-shooter.png') }}"
+                    alt="Banana Shooter"
+                    class="social-icon-img">
+            </a>
+        {% endif %}
+    </div>
+{% endblock header %}

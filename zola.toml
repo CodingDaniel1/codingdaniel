@@ -1,0 +1,63 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "zola-pickles"
+
+title = "Daniel's blog station"
+
+# When set to "true", files in the `static` directory are hard-linked. Useful for large
+# static files. Note that for this to work, both `static` and the
+# output directory need to be on the same filesystem. Note that the theme's `static`
+# files are always copied, regardless of this setting.
+# hard_link_static = false
+
+# The taxonomies to be rendered for the site and their configuration.
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags", lang = "fr"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [
+    {name = "tags"},
+    {name = "categories"},
+]
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+# You can put any kind of data here. The data
+# will be accessible in all templates
+# Example:
+#     [extra]
+#     author = "Famous author"
+#
+# author value will be available using {{ config.extra.author }} in templates
+#
+subtitle = "Yippeee"
+author = "CodingDaniel"
+copyright = "Copyright <i class=\"fas fa-heart\" style=\"color: red;\"></i> CodingDaniel 2026"
+analytics = ""
+katex_enable = true
+instantpage_enable = true
+
+# Pagefind site search; requires a `pagefind` run after `zola build`. See
+# README.
+search_enable = true
+
+[extra.social]
+github = "https://github.com/CodingDaniel1"
+steam = "https://steamcommunity.com/profiles/76561198983573782/"
+youtube = "https://www.youtube.com/@codingdaniel"
+banana_shooter = "https://store.steampowered.com/app/1949740/Banana_Shooter/"
