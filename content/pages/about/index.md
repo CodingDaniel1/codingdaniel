@@ -43,8 +43,8 @@ I chose Rust + Vulkan + Slang Shader for my game/engine, during the process I le
 
 ## 2026
 
-This is still unknown at the time of writing this (2026-09-27). My game/engine progress has been doing good, in just a year, I have implemented vulkan descriptor heap, GPU-Driven rendering, deferred visibility rendering, ray traced global illumination, screen space reflection and physically based rendering for literally everything (models, clouds, sky).
+This is still unknown at the time of writing this (2026-09-27). My game/engine progress has been doing good.
 
-I have basically dedicated a year to just graphics programming, because its fun. But I also inherit my previous skills when developing this project, so stuff like game networking (this was designed with the engine) was enhanced and implemented in just 2 weeks with features like client side prediction which is something I dedicated half of my career on. 
+I almost dedicated a year to just graphics programming this year.
 
 To be continued...
