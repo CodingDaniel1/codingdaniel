@@ -96,6 +96,7 @@ name = "Daniel Chen"
 bio = "I'm a game/engine developer focusing on graphics programming, game networking, performance optimizations."
 
 avatar_url = "profile_pic.webp"
+avatar_alt = "Daniel Chen"
 
 # Social icons.
 # "name" should be the file name of "static/icons/*.svg" or
