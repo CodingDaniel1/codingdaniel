@@ -21,7 +21,7 @@ The funny thing is I completely skipped single player game and went straight to 
 
 ## 2022
 
-This was the year I released [my first and last commercial game on steam](https://store.steampowered.com/app/1949740/Banana_Shooter/) to these days. The release date was 2021-05-01. I won't go over the reasoning behind making this game since it's way too long. But I never thought the impact this game can make. It's crazy to me how an unintended microtransaction feature can be utilized in such a not so well-made game. It was like a dream back then to see a single person made game gets 1 million downloads, and it's still insane to see it is currently sitting at 4 million downloads.
+This was the year I released [my first and last commercial game on steam](https://store.steampowered.com/app/1949740/Banana_Shooter/) to these days. The release date was 2022-05-01. I won't go over the reasoning behind making this game since it's way too long. But I never thought the impact this game can make. It's crazy to me how an unintended microtransaction feature can be utilized in such a not so well-made game. It was like a dream back then to see a single person made game gets 1 million downloads, and it's still insane to see it is currently sitting at 4 million downloads.
 
 ## 2023
 
