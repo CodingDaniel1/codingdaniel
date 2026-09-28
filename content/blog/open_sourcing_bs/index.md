@@ -39,8 +39,15 @@ During this process, I realized I can just open source the entire project and pe
 
 In order to open source under a permissive license (MIT License), I have to make sure everything I published is legal. For example, I cannot grab some anonymous music or sfx and put it in the repo and call it due to licensing issue.
 
-Fortunately, I don't have a habit of using third party stuff back in the days when developing Banana Shooter, I'm especially talking about assets from Unity Asset Store. Because Unity Asset Store EULA license does not allow you to redistribute its assets completely, even when they're free. Unless the author license it under MIT or something capable of being redistributable. Since I own all the code in this project, I'm basically half way done the open source process, or completely done if I don't care about assets at all.
+Fortunately, I didn't have a habit of using third party stuff back in the days when developing Banana Shooter, I'm especially talking about assets from Unity Asset Store. Because Unity Asset Store EULA license does not allow you to redistribute their assets completely, even when they're free. Unless the author license it under MIT or something capable of being redistributable.
+Since I own all the code in this project, I'm basically half way done through the open source process, or completely done if I don't care about assets at all which I care.
 
-This is the hard part, almost no audios are produced by me except voice line and some new sfx, this means I cannot redistribute them at all, unless I have the permission to which I don't. So I stripped all unlicensed third party assets (including audios, models, textures, shaders) from the open sourced version.
+So I stripped out all unlicensed third party assets (including audios, models, textures, shaders) from the open sourced version.
 
 Last, it's just boring but important third party notices for legal reasons. Because certain licenses require explicit notices from the root of the project.
+
+## Disclaimer
+
+I want to state that I want to do stuff other than Banana Shooter, which means I expect people to make different versions of this game instead of contributing to this game.
+
+And the main contribution will be focused on bugs fixing and exploit patching.
