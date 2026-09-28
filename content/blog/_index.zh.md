@@ -1,4 +1,8 @@
 +++
+title = "博客"
 sort_by = "date"
-render = false
+template = "archive.html"
+transparent = true
+[extra]
+date_format = "%b %d"
 +++
