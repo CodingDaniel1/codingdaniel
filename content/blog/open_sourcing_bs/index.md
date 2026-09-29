@@ -10,6 +10,7 @@ hidden = true
 
 [extra.cover]
 image = "@/blog/open_sourcing_bs/hero.jpg"
+alt = "First-person view of a test arena with ramps and blocks"
 
 +++
 
