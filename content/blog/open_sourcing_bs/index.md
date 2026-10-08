@@ -3,10 +3,8 @@ title = "Open Sourcing Banana Shooter"
 description = "title self explanatory"
 date = 2026-09-27
 
-hidden = true
-
 [taxonomies]
-# tags = ["banana-shooter"]
+tags = ["banana-shooter"]
 
 [extra.cover]
 image = "@/blog/open_sourcing_bs/hero.jpg"
