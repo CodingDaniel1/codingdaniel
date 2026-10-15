@@ -73,19 +73,25 @@ test('a failed index download shows an error without continuing', async () => {
 });
 
 test('search retries after a failed download', async () => {
-  const p = page(['programming', 'programming']);
-  p.browser.zolaTheme.search.toggle();
+  const p = page(['retry', 'retry']);
+  const search = p.browser.zolaTheme.search;
+  search.toggle();
   await flush();
   p.pending[0].onerror();
   await flush();
-  p.browser.zolaTheme.search.toggle();
+  assert.match(p.results.innerHTML, /Search file not found/);
+  assert.equal(search.index, undefined);
+  search.toggle();
   await flush();
   assert.equal(p.pending.length, 2);
+  assert.equal(p.pending[1].src, p.pending[0].src);
   p.complete(p.pending[1]);
   await flush();
   p.complete(p.pending[2]);
   await flush();
-  assert.match(p.results.innerHTML, /search result for <code>programming<\/code>/);
+  assert.notEqual(search.index, undefined);
+  assert.doesNotMatch(p.results.innerHTML, /Search file not found/);
+  assert.match(p.results.innerHTML, /for <code>retry<\/code>/);
 });
 
 test('results scroll with the standard DOM method', () => {

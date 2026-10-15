@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      ZOLA_VERSION: 0.23.6
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Install Zola
+        run: |
+          mkdir -p "$RUNNER_TEMP/zola"
+          curl -sSfL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar xz -C "$RUNNER_TEMP/zola" zola
+          echo "$RUNNER_TEMP/zola" >> "$GITHUB_PATH"
+
+      - run: zola check --skip-external-links
+      - run: zola build
+      - run: node --test tests/search.test.cjs
